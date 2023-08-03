@@ -12,9 +12,9 @@ const nameList = [
 'Description' : 'Deployment is the process of making a software application available for use in a production environment. It involves installing the software on servers or devices where end-users can access and utilize it. The deployment phase marks the transition from development to the live environment and ensures the software is fully functional and ready for use.',
 'Reference' : 'Software deployment - definition & overview Link:https://www.sumologic.com/glossary/software-deployment/ '},
 { 'id' : 3,
-'Term' : 'Agile',
-'Description' : 'Agile is a flexible software development methodology that emphasizes customer feedback, collaboration, and iterative development. Teams work in short iterations, delivering incremental software updates and prioritizing customer value. Continuous communication ensures adaptability and faster delivery.',
-'Reference' : 'What is the Agile methodology? Link: https://www.atlassian.com/agile'},
+'Term' : 'GitHub',
+'Description' : 'GitHub is a web-based platform for hosting and managing software development projects using Git. It enables collaboration, version control, and code sharing among developers and teams.',
+'Reference' : 'What Is GitHub? A Beginners Introduction to GitHub Link: https://kinsta.com/knowledgebase/what-is-github/'},
 { 'id' : 4,
 'Term' : 'blah',
 'Description' : 'Unit testing is essential in software development, ensuring individual components work correctly, catching bugs early, and enhancing code reliability. It supports continuous integration, improves documentation, and boosts developer confidence.',
@@ -24,9 +24,9 @@ const nameList = [
 'Description' : '"Ops" is the operations team managing software applications or IT systems, handling server administration, network management, deployment, and ensuring system stability and security. They collaborate with the development team, especially in DevOps methodologies, to ensure smooth operations.',
 'Reference' : 'The “Ops” in DevOps Link: https://medium.com/@grazibonizi/the-ops-in-devops-392cdb6e137e'},
 { 'id' : 6,
-'Term' : 'GitHub',
-'Description' : 'GitHub is a web-based platform for hosting and managing software development projects using Git. It enables collaboration, version control, and code sharing among developers and teams.',
-'Reference' : 'What Is GitHub? A Beginner’s Introduction to GitHub Link: https://kinsta.com/knowledgebase/what-is-github/'},
+'Term' : 'Agile',
+'Description' : 'Agile is a flexible software development methodology that emphasizes customer feedback, collaboration, and iterative development. Teams work in short iterations, delivering incremental software updates and prioritizing customer value. Continuous communication ensures adaptability and faster delivery.',
+'Reference' : 'What is the Agile methodology? Link: https://www.atlassian.com/agile'},
 { 'id' : 7,
 'Term' : 'Repository',
 'Description' : 'A repository is a central location for storing and managing software code and files. It enables version control, collaboration, and history tracking of changes, making it essential for software projects.',
@@ -47,7 +47,7 @@ const nameList = [
 ];
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'SIT722 DevOps Glossary' , sub: 'Welcome to my site showing Devops terms and their brief descriptions' , names: nameList});
+  res.render('index', { title: 'SIT722 DevOps Glossary' , sub: 'Welcome to the site showing Devops terms & their brief descriptions' , names: nameList});
 });
 
 module.exports = router;
